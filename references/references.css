@@ -1,0 +1,131 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Container Styling */
+div {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Header Styling */
+header {
+    background: #4B0082;
+    color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: left;
+    margin: 0;
+    padding-left: 2%;
+}
+
+/* Column Layout */
+#column {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background: #5A4FCF;
+    color: white;
+    padding: 3%;
+    width: 25%;
+}
+
+nav li {
+    display: block;
+    justify-content: space-evenly;
+    margin-top: 35%;
+}
+
+nav ul {
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: inline;
+    border: white solid 2px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #7D6BC9;
+    color: white;
+    margin: 2%;
+    padding: 5px 10px;
+}
+
+/* Main Content */
+main {
+    padding-top: 5%;
+    height: 100vh;
+    margin: 0;
+    background: #C2B6F3;
+    color: #2D1B64;
+    text-align: center;
+    width: 75%;
+}
+
+/* Table Styling */
+table {
+    /* Styles the table with margins to center it, a specific font family, width, and height */
+    margin-top: 10% ;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 30%;
+}
+
+/* Footer Styling */
+footer {
+    background: #2D1B64;
+    color: white;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Responsive Styling for screen with smaller than 900px*/
+@media screen and (max-width: 900px) {
+    #column {
+        display: inline;
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    nav li {
+        font-size: calc(2px + 1.25vw);
+        display: inline;
+    }
+
+    nav a {
+        display: inline;
+        border: white solid 2px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #7D6BC9;
+        color: white;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    header {
+        text-align: center;
+    }
+}

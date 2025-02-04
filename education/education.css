@@ -1,0 +1,188 @@
+*{
+    /* Resets margin for all elements and includes padding and borders in element dimensions */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+div{
+    /* Limits div width to 80% and centers it horizontally */
+    max-width: 80%;
+    margin: auto;
+    font-size: calc( 2px + 1vw );
+}
+
+header{
+    /* Styles the header with font size, alignment, and padding */
+    background: #CC0000;
+    color: white;
+    font-size: calc(2px + 1vw);
+    text-align: left;
+    padding-left: 2%;
+}
+
+footer{
+    /* Styles the footer with padding, flexbox layout, background, and text colors */
+    background: #CC0000;
+    color: white;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+header {
+    /* Styles the header with background color, padding, and text color */
+    background: #CC0000;
+    color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#column{
+    /* Sets #column as a flex container in row layout with full width */
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+nav{
+    /* Styles the navigation section with background color, width, and text alignment */
+    background: #800000;
+    color: white;
+    width: 25%;
+    text-align: center;
+}
+
+nav li{
+    /* Styles navigation list items with font and spacing */
+    margin-top: 35%;
+    display: block;
+    padding-left: 0;
+}
+
+nav a{
+    /* Styles anchor links with border, background color, and text alignment */
+    display: inline;
+    border: white solid 2px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    margin: 2%;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+nav ul{
+    /* Removes padding, list style, and adjusts layout for unordered list in navigation */
+    padding-left: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+main{
+    /* Styles the main content area with height, background color, font size, and padding */
+    height: 100vh;
+    background: #F5F5F5;
+    color: black;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    width: 85%;
+    font-size: calc(2px + 1.35vw);
+}
+
+main h3{
+    /* Adds padding to the bottom of h3 headings */
+    padding-bottom: 5%;
+}
+
+main h3{
+    /* Centers h3 headings and adds top and bottom padding */
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+h4{
+    /* Adds padding to the left and top of h4 headings */
+    padding-left: 15%;
+    padding-top: 7%;
+}
+
+main ul{
+    /* Adds padding to unordered list in main content */
+    padding-left: 35%;
+}
+@media screen and (max-width: 900px) {
+    /* Responsive styles for screens with a width of 900px or less */
+
+    #column{
+        /* Changes #column layout to block and sets its width to 100% for small screens */
+        display: block;
+        max-width: 100%;
+    }
+
+    header{
+        /* Adjusts font size for the header on small screens */
+        font-size: calc(2px + 2.25vw);
+    }
+
+    nav{
+        /* Adjusts navigation padding and width for small screens */
+        padding-top: 0;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    nav li{
+        /* Styles navigation list items with inline display, font size, and removes list bullets */
+        display: inline;
+        font-size: calc(2px + 2vw);
+        list-style-type: none;
+        margin: 0;
+    }
+
+    nav ul{
+        /* Sets width, padding, and margin for the navigation unordered list */
+        width: 100%;
+        padding-top: 5%;
+        padding-right: 5%;
+        margin-left: 2%;
+        justify-content: space-evenly;
+    }
+
+    nav a{
+        /* Styles navigation links with a border, margin, and removes text decoration */
+        border: white solid 2px;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    h4{
+        /* Adds left padding to h4 headings for small screens */
+        padding-left: 10%;
+    }
+
+    main ul{
+        /* Adjusts padding for unordered lists in the main content */
+        padding-left: 25%;
+    }
+
+    main{
+        /* Sets the main content width, height, and font size for small screens */
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        font-size: calc(2px + 3vw);
+    }
+
+    header{
+        /* Centers the header content for small screens */
+        text-align: center;
+    }
+    footer{
+        font-size: calc(2px + 1.5vw)
+    }
+}

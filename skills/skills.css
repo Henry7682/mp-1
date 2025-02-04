@@ -1,0 +1,144 @@
+* {
+    /* Resets margin for all elements and includes padding and borders in element dimensions */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+div{
+    /* Limits div width to 80% and centers it horizontally */
+    max-width: 80%;
+    margin: auto;
+    font-size: calc( 2px + 1.5vw );
+}
+
+header {
+    background: #4B0082;
+    color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: left;
+    margin: 0;
+    padding-left: 2%;
+}
+
+#column{
+    /* Displays #column as a flex container with a row layout and full width */
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+nav{
+    /* Styles the navigation section with text alignment, background color, font, padding, and width */
+    text-align: center;
+    background: #5A4FCF; /* Soft Indigo */
+    color: white;
+    width: 25%;
+    height: 100vh;
+}
+
+nav li {
+    /* Sets list items in the navigation as block elements and spaces them out vertically */
+    display: block;
+    justify-content: space-evenly;
+    margin-top: 25%;
+}
+
+nav ul{
+    /* Styles the unordered list in navigation with no left padding and adds top margin */
+    padding-left: 0;
+    margin-top: 35%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    /* Styles anchor links with a border, background color, and margin */
+    display: inline;
+    border: white solid 2px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #7D6BC9; /* Light Indigo */
+    color: white;
+    margin: 2%;
+}
+
+main{
+    /* Styles the main content area with padding, background color, text alignment, and width */
+    padding-top: 5%;
+    height: 100vh;
+    margin: 0;
+    background: #C2B6F3;
+    color: #2D1B64;
+    text-align: center;
+    width: 75%;
+}
+table {
+    /* Styles the table with margins to center it, a specific font family, width, and height */
+    margin-top: 10% ;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 30%;
+}
+
+footer{
+    /* Styles the footer with a background color, text color, padding, and flexbox layout */
+    background: #2D1B64;
+    color: white;
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Applies responsive styling for screens with a width of 900px or less */
+    #column{
+        /* Adjusts the #column layout for smaller screens */
+        display: inline;
+        width: 100%;
+    }
+
+    nav{
+        /* Adjusts the navigation styling for smaller screens */
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav li{
+        /* Adjusts list items in the navigation for smaller screens */
+        display: inline;
+    }
+
+    nav a{
+        display: inline;
+        border: white solid 2px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #7D6BC9;
+        color: white;
+        font-size: calc( 2px + 1.3vw );
+        padding: 1.4%;
+    }
+
+    nav ul{
+        /* Adjusts unordered list layout for smaller screens */
+        margin-top: auto;
+    }
+
+    main{
+        /* Adjusts the main content area for smaller screens */
+        width: 100%;
+        margin: auto;
+    }
+
+    header{
+        /* Centers the header content for smaller screens */
+        text-align: center;
+    }
+}

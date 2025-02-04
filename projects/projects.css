@@ -1,0 +1,213 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Container Styling */
+div {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Header Styling */
+header {
+    background: #FFD700;
+    color: black;
+    font-size: calc(2px + 1.5vw);
+    text-align: left;
+    padding: 5%;
+}
+
+/* Footer Styling */
+footer {
+    background: #DAA520;
+    color: black;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Column Layout */
+#column {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+/* Navigation */
+nav {
+    background: #FFC72C;
+    color: black;
+    padding: 5% 8%;
+    width: 25%;
+    text-align: center;
+}
+
+nav li {
+    margin-top: 35%;
+    display:flex;
+    padding-left: 0;
+}
+
+nav ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    border: #EADBC8 solid 10px;
+    text-decoration: none;
+    background-color: #FFFACD;
+    color: black;
+    margin: 2%;
+    padding-left: 0;
+}
+
+/* Main Content */
+main {
+    height: 100vh;
+    background: #FFF8DC;
+    color: black;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    max-width: 100%;
+    font-size: calc(2px + 1vw);
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+/* Headings */
+main h3 {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+main h4 {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+main ul {
+    padding-left: 25%;
+    padding-top: 1%;
+}
+
+/* Calculator */
+#calc {
+    margin: auto;
+    background-image: url("src/gold.jpg");
+    max-width: 40%;
+    height: 50%;
+    padding: 20px;
+}
+
+#calc h3 {
+    text-align: center;
+    font-size: calc(2px + 5vw);
+    color: black;
+}
+
+#calc label {
+    font-size: calc(2px + 1vw);
+    color: white;
+}
+
+#calc input {
+    margin-top: 10%;
+    width: 15%;
+}
+
+#calc button {
+    width: 25%;
+    height: 5%;
+    font-size: calc(2px + 2vw);
+    border-radius: 50%;
+    border: none;
+    background-color: #FFDAB9;
+    color: black;
+}
+
+#buttons {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+#calc p {
+    text-align: center;
+    margin: 10% auto;
+    color: black;
+    border: 2px solid black;
+    background: white;
+    max-width: 50%;
+}
+
+/* Responsive Styling for screen width smaller than 900px*/
+@media screen and (max-width: 900px) {
+    #column {
+        display: inline;
+        max-width: 100%;
+    }
+
+    nav {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    nav li {
+        font-size: calc(2px + 2vw);
+        list-style-type: none;
+        padding-left: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        width: 5%;
+        padding-right: 0;
+    }
+
+    nav a {
+        display: inline;
+        border: #EADBC8 solid 2px;
+        text-decoration: none;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        font-size: calc(2px + 2.5vw);
+    }
+
+    main h4 {
+        padding-top: 3%;
+    }
+
+    header {
+        text-align: center;
+        font-size: calc(2px + 1.75vw);
+        padding: 7% 0;
+    }
+
+    #buttons {
+        padding-top: 15%;
+        width: 50%;
+    }
+
+    #calc input {
+        margin-top: 40%;
+    }
+    #calc {
+        max-width: 60%;
+    }
+    #calc label {
+        font-size: calc(2px + 2vw);
+    }
+}
