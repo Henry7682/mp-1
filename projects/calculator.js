@@ -69,14 +69,15 @@ function powerbutton() {
     let result = 1;
 
 
-    for (let i = 0; i < num2; i++) {
-        result *= num1;
-    }
-
-    if (result < 0) {
-        document.getElementById('output').style.color = "red";
+    if (num2 >= 0) {
+        for (let i = 0; i < num2; i++) {
+            result *= num1;
+        }
     } else {
-        document.getElementById('output').style.color = "black";
+        for (let i = 0; i < Math.abs(num2); i++) {
+            result *= num1;
+        }
+        result = 1 / result;
     }
 
     document.getElementById("output").innerHTML = "Answer: " + result;
