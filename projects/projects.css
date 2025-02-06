@@ -206,6 +206,7 @@ main ul {
     }
     #calc {
         max-width: 60%;
+        max-height: 50vh;
     }
     #calc label {
         font-size: calc(2px + 2vw);
